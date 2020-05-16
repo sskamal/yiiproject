@@ -125,4 +125,8 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionDire($message='BONJOUR Mr KAMAL'){
+        return $this->render('dire',['message'=>$message]);
+    }
 }
